@@ -477,7 +477,7 @@ Egi & Siti`;
     const text = buildMessage(nama, slug);
     const phone = document.getElementById('inputPhone').value.trim().replace(/\D/g, '');
     const waNumber = phone ? '62' + phone.replace(/^0+/, '') : '';
-    window.open('https://wa.me/' + waNumber + '?text=' + encodeURIComponent(text), '_blank');
+    window.open('http://api.whatsapp.com/send/?phone=' + waNumber + '?text=' + encodeURIComponent(text), '_blank');
   }
 
   function resetForm() {
